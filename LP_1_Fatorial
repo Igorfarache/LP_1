@@ -2,7 +2,7 @@
 
 int main() {
     int numero;
-    long long fatorial = 1; // Usamos long long para números grandes
+    long long fatorial = 1; // Usei long long para números grandes
     
     // Lê o número do usuário
     printf("Digite um número inteiro não negativo: ");
@@ -10,7 +10,7 @@ int main() {
     
     // Verifica se o número é válido
     if (numero < 0) {
-        printf("Erro: Fatorial não está definido para números negativos.\n");
+        printf("Fatorial não está definido para números negativos.\n");
         return 1;
     }
     
