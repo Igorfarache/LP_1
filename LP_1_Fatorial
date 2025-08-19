@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+    long long fatorial = 1; // Usamos long long para números grandes
+    
+    // Lê o número do usuário
+    printf("Digite um número inteiro não negativo: ");
+    scanf("%d", &numero);
+    
+    // Verifica se o número é válido
+    if (numero < 0) {
+        printf("Erro: Fatorial não está definido para números negativos.\n");
+        return 1;
+    }
+    
+    // Calcula o fatorial
+    for (int i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+    
+    printf("O fatorial de %d é %lld\n", numero, fatorial);
+    
+    return 0;
+}
