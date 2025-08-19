@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    
+    // Lê o número inteiro N
+    printf("Digite um número inteiro positivo: ");
+    scanf("%d", &n);
+    
+    // Verifica se o número é positivo
+    if (n <= 0) {
+        printf("Por favor, digite um número positivo maior que zero.\n");
+        return 1; // Retorna código de erro
+    }
+    
+    printf("\nNúmeros de 1 até %d:\n", n);
+    
+    // Imprime números de 1 até N
+    for (int i = 1; i <= n; i++) {
+        printf("%d\n", i);
+    }
+    
+    return 0; // Programa executado com sucesso
+}
