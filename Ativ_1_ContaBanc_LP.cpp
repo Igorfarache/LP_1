@@ -72,7 +72,7 @@ public:
             cout << "Saldo insuficiente para transferência!" << endl;
         } else {
             saldo -= valor;
-            destino.depositar(valor);
+            destino.depositar(valor); // chama depositar para respeitar o encapsulamento, facilitar manutenções futuras e reaproveitar código
             cout << "Transferido: R$ " << valor << " da conta " << numero << " para a conta " << destino.numero << endl;
         }
     }
@@ -85,7 +85,7 @@ public:
             cout << "Saldo insuficiente para transferência!" << endl;
         } else {
             saldo -= valor;
-            destino1.depositar(metade);
+            destino1.depositar(metade); // chama depositar para respeitar o encapsulamento, facilitar manutenções futuras e reaproveitar código
             destino2.depositar(metade);
             cout << "Transferido: R$ " << metade << " para cada conta (" << destino1.numero << " e " << destino2.numero 
             << ") da conta " << numero << endl;
